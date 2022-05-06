@@ -18,8 +18,12 @@ function operate(op, a, b) {
     console.log(op(a,b));
 }
 
-// console.log(add(1,2));
-// console.log(subtract(1,2));
-// console.log(multiply(1,2));
-// console.log(divide(1,2));
-operate(add, 1, 3);
+const operatorButtons = document.querySelectorAll('.op-btn');
+const total = document.querySelector('#total');
+console.log(total);
+
+operatorButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        total.textContent = button.textContent;
+    })
+});

@@ -1,11 +1,12 @@
 .body {
-    border: thin solid peru;
-    background-color: red
+    /* border: thin solid peru; */
+    padding: 50px;
 }
 
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 8px;
+    color: orange;
 }
 
 .container {
@@ -18,6 +19,7 @@
 
 .calculator-body {
     border: thin solid blue;
+    background-color: rgba(0, 0, 255, 0.084);
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -27,17 +29,27 @@
 }
 
 .display-screen {
-    border: thin solid coral;
+    border: thin solid orange;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 90px;
     text-align: end;
-    font-size: 45px;
     padding: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+#total {
+    font-size: 45px;
 }
 
 .op-btn,
 #clear-btn,
 #delete-btn {
-    background-color: inherit;
+    background-color: rgba(255, 166, 0, 0.315);
 }
 
 #clear-btn,
@@ -45,6 +57,7 @@
     flex-grow: 1;
     font-size: large;
     border: thin solid orange;
+    
 }
 
 .clear-delete-btns {
@@ -68,5 +81,5 @@
     width: 90px;
     padding: 0;
     font-size: large;
-    border: thin solid green;
+    border: thin solid orange;
 }

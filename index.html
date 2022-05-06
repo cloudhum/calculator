@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src ="script.js"></script>
+    <script src ="script.js" defer></script>
     
 </head>
 <body>
     <div class="container">
         <div class="calculator-body">
-            <div class="display-screen">0</div>
+            <div class="display-screen">
+                <p id="runnning-equation">this is where running equation goes</p>
+                <p id="total">0</p>
+            </div>
             <div class="clear-delete-btns">
                 <button id="clear-btn">CLEAR</button>
                 <button id="delete-btn">DELETE</button>
