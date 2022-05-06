@@ -1,0 +1,72 @@
+.body {
+    border: thin solid peru;
+    background-color: red
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+}
+
+.container {
+    border: thin solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculator-body {
+    border: thin solid blue;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    height: 550px;
+    width: 420px;
+    padding: 25px;
+}
+
+.display-screen {
+    border: thin solid coral;
+    height: 90px;
+    text-align: end;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.op-btn,
+#clear-btn,
+#delete-btn {
+    background-color: inherit;
+}
+
+#clear-btn,
+#delete-btn {
+    flex-grow: 1;
+    font-size: large;
+    border: thin solid orange;
+}
+
+.clear-delete-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.operator-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    flex-grow: 1;
+
+}
+
+.op-btn {
+    height: 70px;
+    width: 90px;
+    padding: 0;
+    font-size: large;
+    border: thin solid green;
+}
