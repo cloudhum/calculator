@@ -21,6 +21,10 @@ function operate(op, a, b) {
 const numberButtons = document.querySelectorAll('.num-btn');
 const symbolButtons = document.querySelectorAll('.sym-btn');
 const runningEquation = document.querySelector('#running-equation');
+const clearButton = document.querySelector('#clear-btn');
+const deleteButton = document.querySelector('#delete-btn');
+console.log(clearButton);
+console.log(deleteButton);
 console.log(runningEquation);
 const result = document.querySelector('#total');
 console.log(result);
@@ -37,9 +41,10 @@ numberButtons.forEach(button => {
 });
 
 //when a symbol button is clicked update running equation display
-// symbolButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-//         inputtedNums.push(button.textContent);
-//         runningEquation.textContent = inputtedNums.toString();
-//     })
-// })
+symbolButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        inputtedNums.push(button.textContent);
+        runningEquation.textContent = inputtedNums.toString();
+        
+    })
+})
