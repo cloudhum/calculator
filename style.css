@@ -1,7 +1,18 @@
-.body {
-    /* border: thin solid peru; */
-    padding: 50px;
+/* html,
+body {
+    height: 100%;
+} */
+
+html {
+    height: 100%;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
 
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -10,7 +21,6 @@
 }
 
 .container {
-    border: thin solid pink;
     display: flex;
     justify-content: center;
     align-items: center;
